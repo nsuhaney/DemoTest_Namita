@@ -1,0 +1,190 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-17T02:20:34.138Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1953215100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Validate user registration is failed",
+        "description": "",
+        "id": "invalid-registration-to-automation-practice-website;validate-user-registration-is-failed",
+        "after": [
+          {
+            "result": {
+              "duration": 380148500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5798712700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Automation practice authentication page is opened",
+            "match": {
+              "location": "AuthenticationStepDef.automation_practice_authentication_page_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5207921700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I register account with email address \"invalidTest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalidTest",
+                  "offset": 39
+                }
+              ],
+              "location": "AuthenticationStepDef.i_register_account_with_email_address(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64896400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"Invalid email address.\" error is thrown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid email address.",
+                  "offset": 1
+                }
+              ],
+              "location": "AuthenticationStepDef.error_is_thrown(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Invalid registration to automation practice website",
+    "description": "",
+    "id": "invalid-registration-to-automation-practice-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/autoapp/automation/features/Authentication.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-17T02:20:47.547Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1120963800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Navigation to Megamenu",
+        "description": "",
+        "id": "navigation-through-main-menu-and-submenu;navigation-to-megamenu;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 220271200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6905472100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Automation practice application is opened",
+            "match": {
+              "location": "RegisterStepDef.automation_practice_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3052275000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate through menus Dresses and Summer Dresses",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dresses",
+                  "offset": 25
+                },
+                {
+                  "val": "Summer Dresses",
+                  "offset": 37
+                }
+              ],
+              "location": "MenuNavStepDef.i_navigate_through_menus_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33592800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "SUMMER DRESSES is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SUMMER DRESSES",
+                  "offset": 0
+                }
+              ],
+              "location": "MenuNavStepDef.is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Navigation through main menu and submenu",
+    "description": "",
+    "id": "navigation-through-main-menu-and-submenu",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/autoapp/automation/features/MenuNavigation.feature",
+    "tags": []
+  }
+]
